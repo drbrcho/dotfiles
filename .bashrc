@@ -43,4 +43,4 @@ alias gc='git clone'
 alias kubectl="k"
 
 # podman
-alias podman="docker"
+alias docker="podman"
