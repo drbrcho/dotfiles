@@ -40,7 +40,7 @@ alias gs='git status'
 alias gc='git clone'
 
 # kubectl
-alias kubectl="k"
+alias k="kubectl"
 
 # podman
 alias docker="podman"
