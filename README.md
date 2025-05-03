@@ -19,7 +19,11 @@ the last `25000` commands will be save in a `.histfile` in the `~/` (home direct
 
 ## Setup Notes
 
-Clone and move the `.bashrc`, `.bash_profile` and `.tmux.conf` files to your `~/` (home)directory.
+Clone and move the `.bashrc`, `.bash_profile`, `.tmux.conf` and `.config/alacritty/` files to your `~/` (home)directory.
+
+### Alacritty
+
+`Alacritty` uses the `gruvbox dark` theme, and `UbuntuMono Nerd Font` (has to be installed separately). Feel free to change the theme and font up to your liking. 
 
 ### OS Support
 
