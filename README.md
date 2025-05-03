@@ -19,7 +19,7 @@ the last `25000` commands will be save in a `.histfile` in the `~/` (home direct
 
 ## Setup Notes
 
-Clone and move the `.bashrc` and `.bash_profile` files to your `~/` (home)directory.
+Clone and move the `.bashrc`, `.bash_profile` and `.tmux.conf` files to your `~/` (home)directory.
 
 ### OS Support
 
