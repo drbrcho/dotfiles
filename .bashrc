@@ -44,3 +44,9 @@ alias k="kubectl"
 
 # podman
 alias docker="podman"
+
+### Init tmux at start ###
+if [ -n "$PS1" ] && [ -z "$TMUX" ]; then
+  # Create session 'main' or attach to 'main' if already exists.
+  tmux new-session -A -s main
+fi
