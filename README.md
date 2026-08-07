@@ -24,7 +24,8 @@ These are **not** installed by `setup.sh` -- install them yourself before first 
 |---|---|---|
 | `base-devel` | C compiler -- nvim-treesitter compiles parser C code | `sudo pacman -S base-devel` |
 | `nodejs` + `npm` | mason LSP servers (jsonls, yamlls, dockerls, pyright are npm-based) | `sudo pacman -S nodejs npm` |
-| Nerd Font | icons in nvim (web-devicons, telescope, which-key) | `sudo pacman -S ttf-jetbrains-mono-nerd` |
+| Nerd Font | icons in nvim (web-devicons, telescope, which-key) and starship prompt glyphs | `sudo pacman -S ttf-jetbrains-mono-nerd` |
+| `starship` | shell prompt (`.bashrc` calls `starship init bash`) | `sudo pacman -S starship` |
 
 ### Notes
 
@@ -33,7 +34,11 @@ These are **not** installed by `setup.sh` -- install them yourself before first 
 - After installing a Nerd Font, set it as the terminal font ("JetBrainsMono Nerd Font") -- installing the font does nothing until the terminal actually uses it
 - Test icons: `echo -e "\ue0b0"` should render an arrow, not a square
 
-macOS equivalents: requires [Homebrew](https://brew.sh) installed first, then `brew install gcc node npm` and `brew install --cask font-jetbrains-mono-nerd`.
+macOS equivalents: requires [Homebrew](https://brew.sh) installed first, then `brew install gcc node npm starship` and `brew install --cask font-jetbrains-mono-nerd`.
+
+## Starship
+
+The prompt is managed by [Starship](https://starship.rs). `.bashrc` calls `starship init bash`, which replaces the default `PS1`. No config file is required -- starship works out of the box with default configuration.
 
 ## Breakdown
 
