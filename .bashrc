@@ -5,7 +5,8 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-PS1='[\u@\h \W]\$ '
+# Starship prompt (replaces PS1)
+eval "$(starship init bash)"
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
 # Set to superior editing mode
